@@ -3,6 +3,7 @@ import appleIcon from '../assets/images/apple_icon.svg'
 import googlePlayIcon from "../assets/images/googleplay_icon.svg";
 import cathedralImg from "../assets/images/cathedral.png";
 import heroImg from "../assets/images/hero_image.png";
+import groupSvg from "../assets/images/Group.svg";
 
 // Desktop Logo (64px)
 function Group() {
@@ -127,17 +128,7 @@ function Header() {
 // Hero logo and title
 function Group1Mobile() {
   return (
-    <div className="h-[71.207px] relative shrink-0 w-[88px]" data-name="Group">
-      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 88 72">
-        <g id="Group">
-          <path d={svgPaths.p1a3a4300} fill="var(--fill-0, #F7EA2F)" id="Vector" />
-          <path d={svgPaths.pa0b3840} fill="var(--fill-0, #27B373)" id="Vector_2" />
-          <path d={svgPaths.p13684d80} fill="var(--fill-0, #27B373)" id="Vector_3" />
-          <path d={svgPaths.p33ead080} fill="var(--fill-0, #271E3E)" id="Vector_4" />
-          <path d={svgPaths.pd200b00} fill="var(--fill-0, #271E3E)" id="Vector_5" />
-        </g>
-      </svg>
-    </div>
+    <img src={groupSvg} alt="Group" className="h-[80.5px] w-[88px]" />
   );
 }
 
