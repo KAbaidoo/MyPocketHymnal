@@ -1,8 +1,8 @@
 import svgPaths from "../imports/svg-goshzmvjsh";
-import imgImage2 from "figma:asset/25698dc498d2a78b06424a77d6abc51a77ede870.png";
-import imgImage3 from "figma:asset/4946df0d84a42d5d94e5ad0c0c97237f294fcca0.png";
-import imgMainContent from "figma:asset/ff7abc3b099be04e13f851a5c02fff459914518d.png";
-import imgImage5 from "figma:asset/98d7829512251a3efd250d2ced6abe6a73b6c91d.png";
+import appleIcon from '../assets/images/apple_icon.svg'
+import googlePlayIcon from "../assets/images/googleplay_icon.svg";
+import cathedralImg from "../assets/images/cathedral.png";
+import heroImg from "../assets/images/hero_image.png";
 
 // Desktop Logo (64px)
 function Group() {
@@ -65,7 +65,7 @@ function Frame2() {
     >
       <div className="bg-black content-stretch flex gap-[4px] h-[60px] items-center overflow-clip pl-0 pr-[14px] py-0 relative rounded-[16px] shrink-0 w-[176px]">
         <div className="relative shrink-0 size-[56px]" data-name="image 2">
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImage2} />
+          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={appleIcon} />
         </div>
         <div className="font-['Public_Sans:SemiBold',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
           <p className="mb-0 text-[14px]">Download on</p>
@@ -87,7 +87,7 @@ function Frame3() {
       <div className="bg-black content-stretch flex gap-[4px] h-[60px] items-center overflow-clip pl-0 pr-[14px] py-0 relative rounded-[16px] shrink-0">
         <div className="relative shrink-0 size-[56px]" data-name="image 2">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute left-[18.74%] max-w-none size-[67.2%] top-[16.4%]" src={imgImage3} />
+            <img alt="" className="absolute left-[18.74%] max-w-none size-[67.2%] top-[16.4%]" src={googlePlayIcon} />
           </div>
         </div>
         <div className="font-['Public_Sans:SemiBold',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
@@ -295,13 +295,13 @@ function MainContent() {
     <div className="h-[906px] md:h-[844px] overflow-clip rounded-[24px] shadow-[0px_16px_32px_-12px_rgba(14,18,27,0.1)] mt-[28px] md:mt-[23px] mx-[16px] md:mx-[32px] relative" data-name="Main content">
       {/* Background image and overlay */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[24px]">
-        <img alt="" className="absolute max-w-none object-50%-50% object-cover rounded-[24px] size-full" src={imgMainContent} />
+        <img alt="" className="absolute max-w-none object-50%-50% object-cover rounded-[24px] size-full" src={cathedralImg} />
         <div className="absolute bg-[rgba(45,10,34,0.85)] inset-0 rounded-[24px]" />
       </div>
       
       {/* Desktop: Phone mockup on the right */}
       <div className="hidden md:block absolute h-[582.256px] left-[735.26px] top-[141.9px] w-[648.164px]" data-name="image 5">
-        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImage5} />
+        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={heroImg} />
       </div>
       
       {/* Content wrapper */}
@@ -313,7 +313,7 @@ function MainContent() {
             <HeroDownloadSection />
           </div>
           <div className="h-[328.784px] relative shrink-0 w-full" data-name="image 5">
-            <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImage5} />
+            <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={heroImg} />
           </div>
         </div>
         
