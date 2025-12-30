@@ -4,6 +4,7 @@ import googlePlayIcon from "../assets/images/googleplay_icon.svg";
 import cathedralImg from "../assets/images/cathedral.png";
 import heroImg from "../assets/images/hero_image.png";
 import groupSvg from "../assets/images/Group.svg";
+import { useOS } from "./components/ui/utils";
 
 // Desktop Logo (64px)
 function Group() {
@@ -41,9 +42,10 @@ function HymnalContainer() {
 
 // Mobile "Get the app" button
 function GetAppButton() {
+  const href = useOS();
   return (
     <a 
-      href="https://apps.apple.com/app/anglican-hymnal/id123456789" 
+      href={href} 
       target="_blank" 
       rel="noopener noreferrer"
       className="cursor-pointer transition-transform hover:scale-105 block"
@@ -134,17 +136,7 @@ function Group1Mobile() {
 
 function Group1Desktop() {
   return (
-    <div className="h-[129.466px] relative shrink-0 w-[160px]" data-name="Group">
-      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 160 130">
-        <g id="Group">
-          <path d={svgPaths.p1a3a4300} fill="var(--fill-0, #F7EA2F)" id="Vector" />
-          <path d={svgPaths.pa0b3840} fill="var(--fill-0, #27B373)" id="Vector_2" />
-          <path d={svgPaths.p13684d80} fill="var(--fill-0, #27B373)" id="Vector_3" />
-          <path d={svgPaths.p33ead080} fill="var(--fill-0, #271E3E)" id="Vector_4" />
-          <path d={svgPaths.pd200b00} fill="var(--fill-0, #271E3E)" id="Vector_5" />
-        </g>
-      </svg>
-    </div>
+    <img src={groupSvg} alt="Group" className="h-[129.466px] relative shrink-0 w-[160px]" />
   );
 }
 
@@ -205,9 +197,10 @@ function AppleFill() {
 }
 
 function HeroAppleButton() {
+  const href = useOS();
   return (
     <a 
-      href="https://apps.apple.com/app/anglican-hymnal/id123456789" 
+      href={href} 
       target="_blank" 
       rel="noopener noreferrer"
       className="relative rounded-[9.578px] md:rounded-[12px] flex-1 md:flex-initial md:w-[210px] cursor-pointer transition-transform hover:scale-105"
@@ -237,9 +230,10 @@ function GooglePlayFill() {
 }
 
 function HeroGoogleButton() {
+  const href = useOS();
   return (
     <a 
-      href="https://play.google.com/store/apps/details?id=com.anglican.hymnal" 
+      href={href} 
       target="_blank" 
       rel="noopener noreferrer"
       className="relative rounded-[9.578px] md:rounded-[12px] flex-1 md:flex-initial cursor-pointer transition-transform hover:scale-105"
