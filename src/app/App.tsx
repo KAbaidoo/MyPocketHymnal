@@ -29,11 +29,11 @@ function Anglican() {
   );
 }
 
-function Frame7() {
+function HymnalContainer() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <Anglican />
-      <p className="font-['Playfair_Display:SemiBold',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#271e3e] text-[20px] md:text-[32px] text-nowrap tracking-[0.2px] md:tracking-[0.32px]">Anglica Hymnal</p>
+      <p className="font-playfair-semibold font-semibold leading-[normal] relative shrink-0 text-[#271e3e] text-[20px] md:text-[32px] text-nowrap tracking-[0.2px] md:tracking-[0.32px]">Anglican Hymnal</p>
     </div>
   );
 }
@@ -48,14 +48,14 @@ function GetAppButton() {
       className="cursor-pointer transition-transform hover:scale-105 block"
     >
       <div className="bg-black content-stretch flex h-[48px] items-center justify-center overflow-clip px-[16px] relative rounded-[16px] shrink-0">
-        <p className="font-['Public_Sans:SemiBold',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[14px] text-nowrap text-white">Get the app</p>
+        <p className="font-public-sans-semibold font-semibold leading-[normal] relative shrink-0 text-[14px] text-nowrap text-white">Get the app</p>
       </div>
     </a>
   );
 }
 
 // Desktop App Store buttons
-function Frame2() {
+function AppStoreButton() {
   return (
     <a 
       href="https://apps.apple.com/app/anglican-hymnal/id123456789" 
@@ -67,7 +67,7 @@ function Frame2() {
         <div className="relative shrink-0 size-[56px]" data-name="image 2">
           <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={appleIcon} />
         </div>
-        <div className="font-['Public_Sans:SemiBold',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
+        <div className="font-public-sans-semibold font-semibold leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
           <p className="mb-0 text-[14px]">Download on</p>
           <p className="text-[16px]">App Store</p>
         </div>
@@ -76,7 +76,7 @@ function Frame2() {
   );
 }
 
-function Frame3() {
+function PlayStoreButton() {
   return (
     <a 
       href="https://play.google.com/store/apps/details?id=com.anglican.hymnal" 
@@ -90,7 +90,7 @@ function Frame3() {
             <img alt="" className="absolute left-[18.74%] max-w-none size-[67.2%] top-[16.4%]" src={googlePlayIcon} />
           </div>
         </div>
-        <div className="font-['Public_Sans:SemiBold',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
+        <div className="font-public-sans-semibold font-semibold leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
           <p className="mb-0 text-[14px]">Get app on</p>
           <p className="text-[16px]">Google Play</p>
         </div>
@@ -99,11 +99,11 @@ function Frame3() {
   );
 }
 
-function Frame6() {
+function StoreButtonContainer() {
   return (
     <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
-      <Frame2 />
-      <Frame3 />
+      <AppStoreButton />
+      <PlayStoreButton />
     </div>
   );
 }
@@ -111,14 +111,14 @@ function Frame6() {
 function Header() {
   return (
     <div className="bg-white content-stretch flex items-center justify-between px-[16px] md:px-[40px] py-[24px] rounded-bl-[16px] rounded-br-[16px] shadow-[0px_16px_32px_-12px_rgba(14,18,27,0.1)] mx-[16px] md:mx-[32px]" data-name="header">
-      <Frame7 />
+      <HymnalContainer />
       {/* Mobile button */}
       <div className="md:hidden">
         <GetAppButton />
       </div>
       {/* Desktop buttons */}
       <div className="hidden md:flex">
-        <Frame6 />
+        <StoreButtonContainer />
       </div>
     </div>
   );
@@ -160,7 +160,7 @@ function Group1Desktop() {
 function HeroTitle() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0">
-      <div className="font-['Pink_Sunset:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[32px] md:text-[64px] text-white tracking-[0.32px] md:tracking-[0.64px] w-full">
+      <div className="font-pink-sunset-regular leading-[normal] not-italic relative shrink-0 text-[32px] md:text-[64px] text-white tracking-[0.32px] md:tracking-[0.64px] w-full">
         <p className="mb-0">{`Anglican `}</p>
         <p>Hymnal</p>
       </div>
@@ -185,8 +185,8 @@ function HeroLogoAndTitle() {
 function HeroSubtitle() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
-      <p className="font-['Onest:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[18px] md:text-[28px] text-white tracking-[0.18px] md:tracking-[0.28px] w-full">Worship anywhere, anytime</p>
-      <p className="font-['Onest:Regular',sans-serif] font-normal leading-[24px] md:leading-[34px] relative shrink-0 text-[#f7ea2f] text-[16px] md:text-[24px] w-full">Carry your Anglican hymnal in your pocket: beautifully organized, searchable and ready for every moment of worship.</p>
+      <p className="font-onest-medium font-medium leading-[normal] relative shrink-0 text-[18px] md:text-[28px] text-white tracking-[0.18px] md:tracking-[0.28px] w-full">Worship anywhere, anytime</p>
+      <p className="font-onest-regular font-normal leading-[24px] md:leading-[34px] relative shrink-0 text-[#f7ea2f] text-[16px] md:text-[24px] w-full">Carry your Anglican hymnal in your pocket: beautifully organized, searchable and ready for every moment of worship.</p>
     </div>
   );
 }
@@ -223,7 +223,7 @@ function HeroAppleButton() {
     >
       <div className="content-stretch flex gap-[3.193px] md:gap-[4px] items-center overflow-clip p-[9.578px] md:p-[12px] relative rounded-[inherit] w-full">
         <AppleFill />
-        <div className="font-['Public_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
+        <div className="font-public-sans-regular font-normal leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
           <p className="mb-0 text-[12px] md:text-[16px]">Available on the</p>
           <p className="text-[18px] md:text-[24px]">App Store</p>
         </div>
@@ -255,7 +255,7 @@ function HeroGoogleButton() {
     >
       <div className="content-stretch flex gap-[3.193px] md:gap-[4px] items-center overflow-clip p-[9.578px] md:p-[12px] relative rounded-[inherit]">
         <GooglePlayFill />
-        <div className="font-['Public_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
+        <div className="font-public-sans-regular font-normal leading-[normal] relative shrink-0 text-[0px] text-nowrap text-white">
           <p className="mb-0 text-[12px] md:text-[16px]">Get app on</p>
           <p className="text-[18px] md:text-[24px]">Google Play</p>
         </div>
@@ -277,12 +277,12 @@ function HeroDownloadButtons() {
 function HeroDownloadSection() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] md:gap-[16px] items-start relative shrink-0 w-full md:w-[444px]">
-      <p className="font-['Onest:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[16px] md:text-[24px] text-white tracking-[0.16px] md:tracking-[0.24px] w-full">
+      <p className="font-onest-medium font-medium leading-[normal] relative shrink-0 text-[16px] md:text-[24px] text-white tracking-[0.16px] md:tracking-[0.24px] w-full">
         <span className="md:hidden">Tap to download</span>
         <span className="hidden md:inline">Click to download</span>
       </p>
       <HeroDownloadButtons />
-      <p className="font-['Onest:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[14px] md:text-[16px] text-white tracking-[0.14px] md:tracking-[0.16px]">
+      <p className="font-onest-medium font-medium leading-[normal] relative shrink-0 text-[14px] md:text-[16px] text-white tracking-[0.14px] md:tracking-[0.16px]">
         <span className="md:hidden">30-day free trial. No upfront payment. Cancel anytime.</span>
         <span className="hidden md:inline text-nowrap">30-day free trial. No upfront payment. Cancel anytime.</span>
       </p>
@@ -358,7 +358,7 @@ function FooterLogo() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <Anglican1 />
-      <p className="font-['Playfair_Display:SemiBold',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#271e3e] text-[14px] text-nowrap tracking-[0.14px]">Anglica Hymnal</p>
+      <p className="font-playfair-semibold font-semibold leading-[normal] relative shrink-0 text-[#271e3e] text-[14px] text-nowrap tracking-[0.14px]">Anglica Hymnal</p>
     </div>
   );
 }
@@ -367,7 +367,7 @@ function FooterLogoAndCopyright() {
   return (
     <div className="content-stretch flex gap-[16px] items-center justify-center md:justify-start relative shrink-0 w-full md:w-auto">
       <FooterLogo />
-      <div className="flex flex-col font-['Onest:Regular',sans-serif] font-normal h-[17.5px] justify-center leading-[0] relative shrink-0 text-[#525866] text-[12.3px] w-[44.375px]">
+      <div className="flex flex-col font-onest-regular font-normal h-[17.5px] justify-center leading-[0] relative shrink-0 text-[#525866] text-[12.3px] w-[44.375px]">
         <p className="leading-[17.5px]">© 2025</p>
       </div>
     </div>
@@ -376,7 +376,7 @@ function FooterLogoAndCopyright() {
 
 function FooterLinks() {
   return (
-    <div className="content-stretch flex font-['Onest:Medium',sans-serif] font-medium gap-[28px] items-center justify-center md:justify-start leading-[0] relative shrink-0 text-[#525866] text-[12.3px] text-nowrap w-full md:w-auto">
+    <div className="content-stretch flex font-onest-medium font-medium gap-[28px] items-center justify-center md:justify-start leading-[0] relative shrink-0 text-[#525866] text-[12.3px] text-nowrap w-full md:w-auto">
       <div className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[17.5px] text-nowrap">Privacy Policy</p>
       </div>
@@ -399,7 +399,7 @@ function FooterTop() {
 function FooterInitiative() {
   return (
     <div className="content-stretch flex items-center justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Onest:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[#525866] text-[14px] text-center text-nowrap">
+      <div className="flex flex-col font-onest-medium font-medium justify-center leading-[0] relative shrink-0 text-[#525866] text-[14px] text-center text-nowrap">
         <p className="leading-[normal]">
           <span>{`Initiative by `}</span>
           <span className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-solid underline">Curve Concepts</span>

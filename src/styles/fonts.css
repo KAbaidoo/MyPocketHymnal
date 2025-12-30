@@ -2,3 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/pink-sunset');
+
+/* Font classes */
+.font-playfair-semibold {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 600;
+}
+
+.font-public-sans-semibold {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 600;
+}
+
+.font-public-sans-regular {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+}
+
+.font-pink-sunset-regular {
+  font-family: 'pink-sunset', sans-serif;
+  font-weight: 400;
+}
+
+.font-onest-medium {
+  font-family: 'Onest', sans-serif;
+  font-weight: 500;
+}
+
+.font-onest-regular {
+  font-family: 'Onest', sans-serif;
+  font-weight: 400;
+}
