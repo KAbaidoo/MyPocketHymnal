@@ -9,7 +9,7 @@ import { useOS } from "./components/ui/utils";
 import PrivacyPolicy from "./PrivacyPolicy";
 
 // Desktop Logo (64px)
-function HymnalLogo() {
+export function HymnalLogo() {
   return (
     <div className="absolute inset-[26.37%_20.9%_26.38%_20.7%]" data-name="Group">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 38 31">
@@ -25,7 +25,7 @@ function HymnalLogo() {
   );
 }
 
-function Anglican() {
+export function Anglican() {
   return (
     <div className="bg-[#271e3e] overflow-clip relative rounded-[8.125px] md:rounded-[16.25px] shrink-0 size-[32px] md:size-[64px]" data-name="Anglican">
       <HymnalLogo />
@@ -317,7 +317,7 @@ function MainContent() {
 }
 
 // Footer components
-function Group2() {
+export function MiniHymnalLogo() {
   return (
     <div className="absolute inset-[26.37%_20.9%_26.38%_20.7%]" data-name="Group">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19 16">
@@ -333,15 +333,15 @@ function Group2() {
   );
 }
 
-function Anglican1() {
+export function Anglican1() {
   return (
     <div className="bg-[#271e3e] overflow-clip relative rounded-[8px] shrink-0 size-[32px]" data-name="Anglican">
-      <Group2 />
+      <MiniHymnalLogo />
     </div>
   );
 }
 
-function FooterLogo() {
+export function FooterLogo() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <Anglican1 />
@@ -350,7 +350,7 @@ function FooterLogo() {
   );
 }
 
-function FooterLogoAndCopyright() {
+export function FooterLogoAndCopyright() {
   return (
     <div className="content-stretch flex gap-[16px] items-center justify-center md:justify-start relative shrink-0 w-full md:w-auto">
       <FooterLogo />
@@ -361,7 +361,7 @@ function FooterLogoAndCopyright() {
   );
 }
 
-function FooterLinks() {
+export function FooterLinks() {
   return (
     <div className="content-stretch flex font-onest-medium font-medium gap-[28px] items-center justify-center md:justify-start leading-[0] relative shrink-0 text-[#525866] text-[12.3px] text-nowrap w-full md:w-auto">
       <Link to="/privacy-policy" className="flex flex-col justify-center relative shrink-0">
@@ -374,7 +374,7 @@ function FooterLinks() {
   );
 }
 
-function FooterTop() {
+export function FooterTop() {
   return (
     <div className="content-stretch flex flex-col md:flex-row gap-[24px] md:gap-0 items-start md:items-center md:justify-between relative shrink-0 w-full">
       <FooterLogoAndCopyright />
@@ -383,7 +383,7 @@ function FooterTop() {
   );
 }
 
-function FooterInitiative() {
+export function FooterInitiative() {
   return (
     <div className="content-stretch flex items-center justify-center relative shrink-0 w-full">
       <div className="flex flex-col font-onest-medium font-medium justify-center leading-[0] relative shrink-0 text-[#525866] text-[14px] text-center text-nowrap">
@@ -396,7 +396,7 @@ function FooterInitiative() {
   );
 }
 
-function Footer() {
+ export function Footer() {
   return (
     <div className="bg-white content-stretch flex flex-col gap-[24px] md:gap-[32px] items-start overflow-clip px-[16px] md:px-[100px] py-[32px] rounded-tl-[24px] rounded-tr-[24px] mx-[16px] md:mx-[32px] mt-[32px]" data-name="footer">
       <FooterTop />

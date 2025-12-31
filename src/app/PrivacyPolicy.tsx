@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { HymnalContainer } from "./App";
+import { Footer } from "./App";
 
 // Reusing header component for consistency
 function Header() {
@@ -123,53 +124,6 @@ function PrivacyPolicyContent() {
             <p>Last updated: December 31, 2025</p>
           </div>
         </section>
-      </div>
-    </div>
-  );
-}
-
-// Reusing footer component
-function Footer() {
-  return (
-    <div className="bg-white content-stretch flex flex-col gap-[24px] md:gap-[32px] items-start overflow-clip px-[16px] md:px-[100px] py-[32px] rounded-tl-[24px] rounded-tr-[24px] mx-[16px] md:mx-[32px] mt-[32px]" data-name="footer">
-      <div className="content-stretch flex flex-col md:flex-row gap-[24px] md:gap-0 items-start md:items-center md:justify-between relative shrink-0 w-full">
-        <div className="content-stretch flex gap-[16px] items-center justify-center md:justify-start relative shrink-0 w-full md:w-auto">
-          <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-            <div className="bg-[#271e3e] overflow-clip relative rounded-[8px] shrink-0 size-[32px]" data-name="Anglican">
-              <div className="absolute inset-[26.37%_20.9%_26.38%_20.7%]" data-name="Group">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19 16">
-                  <g id="Group">
-                    <path d="M0 8C0 3.58 3.58 0 8 0C12.42 0 16 3.58 16 8C16 12.42 12.42 16 8 16C3.58 16 0 12.42 0 8Z" fill="#F7EA2F" />
-                    <path d="M8 3.5L10 7H6L8 3.5Z" fill="#27B373" />
-                    <path d="M8 12.5L6 9H10L8 12.5Z" fill="#27B373" />
-                    <path d="M3.5 8L7 6V10L3.5 8Z" fill="#271E3E" />
-                    <path d="M12.5 8L9 10V6L12.5 8Z" fill="#271E3E" />
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <p className="font-playfair-semibold font-semibold leading-[normal] relative shrink-0 text-[#271e3e] text-[14px] text-nowrap tracking-[0.14px]">Anglican Hymnal</p>
-          </div>
-          <div className="flex flex-col font-onest-regular font-normal h-[17.5px] justify-center leading-[0] relative shrink-0 text-[#525866] text-[12.3px] w-[44.375px]">
-            <p className="leading-[17.5px]">© 2025</p>
-          </div>
-        </div>
-        <div className="content-stretch flex font-onest-medium font-medium gap-[28px] items-center justify-center md:justify-start leading-[0] relative shrink-0 text-[#525866] text-[12.3px] text-nowrap w-full md:w-auto">
-          <Link to="/privacy-policy" className="flex flex-col justify-center relative shrink-0">
-            <p className="leading-[17.5px] text-nowrap">Privacy Policy</p>
-          </Link>
-          <div className="flex flex-col justify-center relative shrink-0">
-            <p className="leading-[17.5px] text-nowrap">Terms of Service</p>
-          </div>
-        </div>
-      </div>
-      <div className="content-stretch flex items-center justify-center relative shrink-0 w-full">
-        <div className="flex flex-col font-onest-medium font-medium justify-center leading-[0] relative shrink-0 text-[#525866] text-[14px] text-center text-nowrap">
-          <p className="leading-[normal]">
-            <span>{`Initiative by `}</span>
-            <span className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-solid underline">Curve Concepts</span>
-          </p>
-        </div>
       </div>
     </div>
   );
