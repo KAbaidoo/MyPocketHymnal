@@ -1,3 +1,4 @@
+import { Routes, Route, Link } from "react-router-dom";
 import svgPaths from "../imports/svg-goshzmvjsh";
 import appleIcon from '../assets/images/apple_icon.svg'
 import googlePlayIcon from "../assets/images/googleplay_icon.svg";
@@ -5,9 +6,10 @@ import cathedralImg from "../assets/images/cathedral.png";
 import heroImg from "../assets/images/hero_image.png";
 import groupSvg from "../assets/images/Group.svg";
 import { useOS } from "./components/ui/utils";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 // Desktop Logo (64px)
-function Group() {
+function HymnalLogo() {
   return (
     <div className="absolute inset-[26.37%_20.9%_26.38%_20.7%]" data-name="Group">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 38 31">
@@ -26,12 +28,12 @@ function Group() {
 function Anglican() {
   return (
     <div className="bg-[#271e3e] overflow-clip relative rounded-[8.125px] md:rounded-[16.25px] shrink-0 size-[32px] md:size-[64px]" data-name="Anglican">
-      <Group />
+      <HymnalLogo />
     </div>
   );
 }
 
-function HymnalContainer() {
+export function HymnalContainer() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <Anglican />
@@ -362,9 +364,9 @@ function FooterLogoAndCopyright() {
 function FooterLinks() {
   return (
     <div className="content-stretch flex font-onest-medium font-medium gap-[28px] items-center justify-center md:justify-start leading-[0] relative shrink-0 text-[#525866] text-[12.3px] text-nowrap w-full md:w-auto">
-      <div className="flex flex-col justify-center relative shrink-0">
+      <Link to="/privacy-policy" className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[17.5px] text-nowrap">Privacy Policy</p>
-      </div>
+      </Link>
       <div className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[17.5px] text-nowrap">Terms of Service</p>
       </div>
@@ -403,7 +405,7 @@ function Footer() {
   );
 }
 
-export default function App() {
+export default function Home() {
   return (
     <div className="bg-[#fbf8f3] min-h-screen" data-name="v2/web">
       <Header />
@@ -412,3 +414,14 @@ export default function App() {
     </div>
   );
 }
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+    </Routes>
+  );
+}
+
+export { App };
