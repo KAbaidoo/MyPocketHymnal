@@ -85,7 +85,22 @@ function PrivacyPolicyContent() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">6. Your Rights</h2>
+          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">6. Firebase Analytics</h2>
+          <p>
+            We use Firebase Analytics to understand how users interact with our app. Firebase Analytics helps us analyze app usage patterns and improve the app's functionality. Firebase Analytics may collect information such as:
+          </p>
+          <ul className="list-disc list-inside ml-4">
+            <li>App usage data</li>
+            <li>Device information</li>
+            <li>Crash reports</li>
+          </ul>
+          <p className="mt-4">
+            For more information on Firebase Analytics, please visit Google's privacy policy: <a href="https://policies.google.com/privacy" className="text-blue-500 underline">https://policies.google.com/privacy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">7. Your Rights</h2>
           <p className="mb-4">Depending on your location, you may have the following rights:</p>
           <ul className="list-disc list-inside ml-4">
             <li>Access to your personal information</li>
@@ -100,27 +115,27 @@ function PrivacyPolicyContent() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">7. Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">8. Children's Privacy</h2>
           <p>
             Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">8. Changes to This Policy</h2>
+          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">9. Changes to This Policy</h2>
           <p>
             We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">9. Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-[#271e3e] mb-4">10. Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
           <div className="mt-4">
             <p><strong>Curve Concepts</strong></p>
-            <p>Email: privacy@anglicanhymnal.com</p>
+            <p>Email: kobbykolmes@gmail.com</p>
             <p>Last updated: December 31, 2025</p>
           </div>
         </section>
