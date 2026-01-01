@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500&display=swap');
-@import url('https://fonts.cdnfonts.com/css/pink-sunset');
+/* Self-hosted Pink Sunset (local files in ../assets/fonts) */
+@font-face {
+  font-family: 'pink-sunset';
+  src: url('../assets/fonts/PinkSunset-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'pink-sunset';
+  src: url('../assets/fonts/PinkSunset-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* Font classes */
 .font-playfair-semibold {
