@@ -7,6 +7,7 @@ import heroImg from "../assets/images/hero_image.png";
 import groupSvg from "../assets/images/Group.svg";
 import { useOS } from "./components/ui/utils";
 import PrivacyPolicy from "./PrivacyPolicy";
+import TermsOfService from "./TermsOfService";
 
 // Desktop Logo (64px)
 export function HymnalLogo() {
@@ -269,10 +270,6 @@ function HeroDownloadSection() {
         <span className="hidden md:inline">Click to download</span>
       </p>
       <HeroDownloadButtons />
-      <p className="font-onest-medium font-medium leading-[normal] relative shrink-0 text-[14px] md:text-[16px] text-white tracking-[0.14px] md:tracking-[0.16px]">
-        <span className="md:hidden">30-day free trial. No upfront payment. Cancel anytime.</span>
-        <span className="hidden md:inline text-nowrap">30-day free trial. No upfront payment. Cancel anytime.</span>
-      </p>
     </div>
   );
 }
@@ -367,9 +364,9 @@ export function FooterLinks() {
       <Link to="/privacy-policy" className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[17.5px] text-nowrap">Privacy Policy</p>
       </Link>
-      <div className="flex flex-col justify-center relative shrink-0">
+      <Link to="/terms-of-service" className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[17.5px] text-nowrap">Terms of Service</p>
-      </div>
+      </Link>
     </div>
   );
 }
@@ -420,6 +417,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-of-service" element={<TermsOfService />} />
     </Routes>
   );
 }
