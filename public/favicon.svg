@@ -13,6 +13,6 @@
   <rect x="18.3" y="10" width="1" height="4" fill="#1a365d"/>
   
   <!-- Staff lines (simplified) -->
-  <line x1="13" y1="18" x2="20" y2="18" stroke="#4a5568" stroke-width="0.5"/>
-  <line x1="13" y1="20" x2="20" y2="20" stroke="#4a5568" stroke-width="0.5"/>
+  <line x1="13" y1="18" x2="20" y2="18" stroke="#4a5568" stroke-width="1"/>
+  <line x1="13" y1="20" x2="20" y2="20" stroke="#4a5568" stroke-width="1"/>
 </svg>
