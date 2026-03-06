@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#1a365d"/>
+  
+  <!-- Book/Hymnal pages -->
+  <rect x="10" y="8" width="12" height="16" rx="1" fill="#f7fafc"/>
+  
+  <!-- Book spine -->
+  <rect x="10" y="8" width="2" height="16" fill="#2d3748"/>
+  
+  <!-- Musical note -->
+  <circle cx="17" cy="14" r="1.5" fill="#1a365d"/>
+  <rect x="18.3" y="10" width="1" height="4" fill="#1a365d"/>
+  
+  <!-- Staff lines (simplified) -->
+  <line x1="13" y1="18" x2="20" y2="18" stroke="#4a5568" stroke-width="1"/>
+  <line x1="13" y1="20" x2="20" y2="20" stroke="#4a5568" stroke-width="1"/>
+</svg>
