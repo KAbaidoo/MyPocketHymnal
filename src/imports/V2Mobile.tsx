@@ -174,7 +174,6 @@ function Frame12() {
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
       <p className="font-['Onest:Medium',sans-serif] font-medium leading-[normal] min-w-full relative shrink-0 text-[16px] text-white tracking-[0.16px] w-[min-content]">Tap to download</p>
       <Frame6 />
-      <p className="font-['Onest:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[14px] text-nowrap text-white tracking-[0.14px]">30-day free trial. No upfront payment. Cancel anytime.</p>
     </div>
   );
 }

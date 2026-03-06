@@ -215,7 +215,6 @@ function Frame20() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[444px]">
       <Frame12 />
-      <p className="font-['Onest:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[16px] text-nowrap text-white tracking-[0.16px]">30-day free trial. No upfront payment. Cancel anytime.</p>
     </div>
   );
 }
@@ -236,7 +235,7 @@ function Frame9() {
         <img alt="" className="absolute max-w-none object-50%-50% object-cover rounded-[24px] size-full" src={imgFrame103242} />
         <div className="absolute bg-[rgba(45,10,34,0.85)] inset-0 rounded-[24px]" />
       </div>
-      <div className="absolute h-[582.256px] left-[735.26px] top-[141.9px] w-[648.164px]" data-name="image 5">
+      <div className="absolute h-[582.256px] right-[80px] top-[141.9px] w-[648.164px]" data-name="image 5">
         <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImage5} />
       </div>
       <Frame13 />

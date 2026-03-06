@@ -5,8 +5,9 @@ import googlePlayIcon from "../assets/images/googleplay_icon.svg";
 import cathedralImg from "../assets/images/cathedral.png";
 import heroImg from "../assets/images/hero_image.png";
 import groupSvg from "../assets/images/Group.svg";
-import { useOS } from "./components/ui/utils";
+import { APP_STORE_URL, PLAY_STORE_URL } from "./components/ui/utils";
 import PrivacyPolicy from "./PrivacyPolicy";
+import TermsOfService from "./TermsOfService";
 
 // Desktop Logo (64px)
 export function HymnalLogo() {
@@ -44,11 +45,10 @@ export function HymnalContainer() {
 
 // Mobile "Get the app" button
 function GetAppButton() {
-  const href = useOS();
   return (
-    <a 
-      href={href} 
-      target="_blank" 
+    <a
+      href={APP_STORE_URL}
+      target="_blank"
       rel="noopener noreferrer"
       className="cursor-pointer transition-transform hover:scale-105 block"
     >
@@ -62,9 +62,9 @@ function GetAppButton() {
 // Desktop App Store buttons
 function AppStoreButton() {
   return (
-    <a 
-      href="https://apps.apple.com/app/anglican-hymnal/id123456789" 
-      target="_blank" 
+    <a
+      href={APP_STORE_URL}
+      target="_blank"
       rel="noopener noreferrer"
       className="cursor-pointer transition-transform hover:scale-105"
     >
@@ -83,9 +83,9 @@ function AppStoreButton() {
 
 function PlayStoreButton() {
   return (
-    <a 
-      href="https://play.google.com/store/apps/details?id=com.anglican.hymnal" 
-      target="_blank" 
+    <a
+      href={PLAY_STORE_URL}
+      target="_blank"
       rel="noopener noreferrer"
       className="cursor-pointer transition-transform hover:scale-105"
     >
@@ -199,11 +199,10 @@ function AppleFill() {
 }
 
 function HeroAppleButton() {
-  const href = useOS();
   return (
-    <a 
-      href={href} 
-      target="_blank" 
+    <a
+      href={APP_STORE_URL}
+      target="_blank"
       rel="noopener noreferrer"
       className="relative rounded-[9.578px] md:rounded-[12px] flex-1 md:flex-initial md:w-[210px] cursor-pointer transition-transform hover:scale-105"
     >
@@ -232,11 +231,10 @@ function GooglePlayFill() {
 }
 
 function HeroGoogleButton() {
-  const href = useOS();
   return (
-    <a 
-      href={href} 
-      target="_blank" 
+    <a
+      href={PLAY_STORE_URL}
+      target="_blank"
       rel="noopener noreferrer"
       className="relative rounded-[9.578px] md:rounded-[12px] flex-1 md:flex-initial cursor-pointer transition-transform hover:scale-105"
     >
@@ -269,10 +267,6 @@ function HeroDownloadSection() {
         <span className="hidden md:inline">Click to download</span>
       </p>
       <HeroDownloadButtons />
-      <p className="font-onest-medium font-medium leading-[normal] relative shrink-0 text-[14px] md:text-[16px] text-white tracking-[0.14px] md:tracking-[0.16px]">
-        <span className="md:hidden">30-day free trial. No upfront payment. Cancel anytime.</span>
-        <span className="hidden md:inline text-nowrap">30-day free trial. No upfront payment. Cancel anytime.</span>
-      </p>
     </div>
   );
 }
@@ -285,12 +279,12 @@ function MainContent() {
         <img alt="" className="absolute max-w-none object-50%-50% object-cover rounded-[24px] size-full" src={cathedralImg} />
         <div className="absolute bg-[rgba(45,10,34,0.85)] inset-0 rounded-[24px]" />
       </div>
-      
+
       {/* Desktop: Phone mockup on the right */}
-      <div className="hidden md:block absolute h-[582.256px] left-[735.26px] top-[141.9px] w-[648.164px]" data-name="image 5">
+      <div className="hidden md:block absolute h-[600px] left-[900px] right-[80px] top-[141.9px] w-[648px]" data-name="image 5">
         <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={heroImg} />
       </div>
-      
+
       {/* Content wrapper */}
       <div className="relative h-full flex flex-col justify-center px-[16px] py-[80px] md:px-0 md:py-0">
         {/* Mobile: Vertical layout */}
@@ -303,7 +297,7 @@ function MainContent() {
             <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={heroImg} />
           </div>
         </div>
-        
+
         {/* Desktop: Absolute positioned content on the left */}
         <div className="hidden md:block absolute left-[80px] top-[166px] w-[526.004px]">
           <div className="content-stretch flex flex-col gap-[59px] items-start">
@@ -367,9 +361,9 @@ export function FooterLinks() {
       <Link to="/privacy-policy" className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[17.5px] text-nowrap">Privacy Policy</p>
       </Link>
-      <div className="flex flex-col justify-center relative shrink-0">
+      <Link to="/terms-of-service" className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[17.5px] text-nowrap">Terms of Service</p>
-      </div>
+      </Link>
     </div>
   );
 }
@@ -396,7 +390,7 @@ export function FooterInitiative() {
   );
 }
 
- export function Footer() {
+export function Footer() {
   return (
     <div className="bg-white content-stretch flex flex-col gap-[24px] md:gap-[32px] items-start overflow-clip px-[16px] md:px-[100px] py-[32px] rounded-tl-[24px] rounded-tr-[24px] mx-[16px] md:mx-[32px] mt-[32px]" data-name="footer">
       <FooterTop />
@@ -420,6 +414,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-of-service" element={<TermsOfService />} />
     </Routes>
   );
 }
