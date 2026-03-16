@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import svgPaths from "../imports/svg-goshzmvjsh";
 import appleIcon from '../assets/images/apple_icon.svg'
@@ -5,7 +6,7 @@ import googlePlayIcon from "../assets/images/googleplay_icon.svg";
 import cathedralImg from "../assets/images/cathedral.png";
 import heroImg from "../assets/images/hero_image.png";
 import groupSvg from "../assets/images/Group.svg";
-import { APP_STORE_URL, PLAY_STORE_URL } from "./components/ui/utils";
+import { APP_STORE_URL, PLAY_STORE_URL, getStoreUrl } from "./components/ui/utils";
 import PrivacyPolicy from "./PrivacyPolicy";
 import TermsOfService from "./TermsOfService";
 
@@ -45,17 +46,20 @@ export function HymnalContainer() {
 
 // Mobile "Get the app" button
 function GetAppButton() {
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.open(getStoreUrl(), "_blank");
+  };
+
   return (
-    <a
-      href={APP_STORE_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="cursor-pointer transition-transform hover:scale-105 block"
+    <button
+      onClick={handleClick}
+      className="cursor-pointer transition-transform hover:scale-105 block w-full"
     >
       <div className="bg-black content-stretch flex h-[48px] items-center justify-center overflow-clip px-[16px] relative rounded-[16px] shrink-0">
         <p className="font-public-sans-semibold font-semibold leading-[normal] relative shrink-0 text-[14px] text-nowrap text-white">Get the app</p>
       </div>
-    </a>
+    </button>
   );
 }
 
